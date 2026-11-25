@@ -1,0 +1,33 @@
+LEPIDOPTERA – Catálogo fotográfico (versión inicial)
+
+CONTENIDO
+- index.html: aplicación
+- manifest.webmanifest: configuración instalable
+- sw.js: caché para funcionamiento sin conexión
+
+FUNCIONES
+- Alta y edición de especies: familia, subfamilia, género, epíteto específico, distribución y observaciones.
+- Múltiples registros por especie.
+- Cada registro admite fecha, localidad, distribución/ubicación, observaciones y varias fotografías.
+- Búsqueda y filtros por familia y subfamilia.
+- Datos y fotografías almacenados localmente en el navegador mediante IndexedDB.
+- Exportación e importación manual de un respaldo JSON completo.
+
+INSTALACIÓN EN ANDROID
+Para que Chrome permita instalarla como aplicación, los archivos deben estar publicados en un alojamiento HTTPS.
+1. Subí el contenido de esta carpeta a un hosting estático HTTPS (por ejemplo, un sitio propio o GitHub Pages).
+2. Abrí la dirección del sitio desde Chrome en Android.
+3. Menú ⋮ > "Instalar aplicación" o "Agregar a pantalla de inicio".
+4. Abrí la aplicación desde el nuevo icono.
+
+IMPORTANTE SOBRE LOS DATOS
+- Esta versión no sincroniza automáticamente ni envía datos a un servidor.
+- Los datos viven en el almacenamiento del navegador de ese dispositivo y perfil.
+- No borres los datos del sitio ni desinstales/limpies Chrome sin antes exportar un respaldo.
+- Para llevar el catálogo a otro dispositivo: Copias de seguridad > Exportar copia completa; luego abrí la app en el otro dispositivo y usá Importar catálogo.
+- El respaldo incluye las fotografías y puede ocupar bastante espacio.
+- Las imágenes se redimensionan a un máximo de 2000 px y se guardan como JPEG calidad 88 para equilibrar calidad y tamaño.
+- La importación reemplaza el catálogo local actual. Exportá antes si querés conservarlo.
+
+NOTA
+Es una primera versión funcional de base. La publicación HTTPS es necesaria para la instalación PWA y el funcionamiento offline fiable. La publicación no está incluida en este paquete.

@@ -1,0 +1,10 @@
+{
+  "name": "Lepidoptera · Catálogo fotográfico",
+  "short_name": "Lepidoptera",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f4ed",
+  "theme_color": "#183b32",
+  "description": "Catálogo fotográfico personal de Lepidópteros",
+  "icons": []
+}
